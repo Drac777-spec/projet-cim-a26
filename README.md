@@ -131,7 +131,7 @@ Contient les gabarits qui seront complétés lors du **Sprint 2**.
 
 Contient les gabarits qui seront complétés lors du **Sprint 3**.
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
 ### 1. Prérequis
 - Carte Nucleo‑L432KC  
