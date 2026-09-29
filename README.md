@@ -1,15 +1,12 @@
 # Projet-cim-a26
 Projet: Convoyeur Modulaire Industriel automne 2026
 
-Ce projet est un système qui permet de trier des objets en fonction de leur poids.
-
 ![Texte alternatif](images/convoyeur1.png)
 ![Texte alternatif](images/convoyeur2.png)
 ![Texte alternatif](images/convoyeur3.png)
 
 # Objectif du projet
-Ce projet reduit le coût de la main d'oeuvre en apportant une solution automatique et précise
-au tri de centaines d'objets par minute.
+Ce projet est un système qui permet de trier des objets en fonction de leur poids avec l'aide de convoyeur.
 
 # Structure générale du dépôt
 
