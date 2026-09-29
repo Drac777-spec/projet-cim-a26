@@ -1,8 +1,10 @@
-## 1.Schéma électrique
+# Partie électronique du projet
+
+## Schéma électrique
 
 ![Texte alternatif](/images/schema-electrique.png)
 
-## 2. Alimentation et Tensions
+## Alimentation et Tensions
 Le circuit utilise deux rails d'alimentation distincts pour séparer la logique et la puissance :
 * **+5V** : Alimentation logique reliée à la broche `VUSB` (broche 12) de l'Arduino Nano Every, au bouton-poussoir `SW1`, au capteur infrarouge (`JP7`), aux servomoteurs (`JP4`, `JP5`, `JP6`) et au module balance (`JP8`)[cite: 2].
 * **+12V** : Rail de puissance relié directement au pôle positif (Pin 1) des trois moteurs DC (`JP1`, `JP2`, `JP3`)[cite: 2].
@@ -10,7 +12,7 @@ Le circuit utilise deux rails d'alimentation distincts pour séparer la logique 
 
 ---
 
-## 3. Table de brochage (Pinout)
+## Table de brochage (Pinout)
 
 | Broche Arduino | Signal / Pin CI | Composant / Periphérique relié | Valeur / Type | Description / Rôle |
 | :--- | :--- | :--- | :--- | :--- |
@@ -30,7 +32,7 @@ Le circuit utilise deux rails d'alimentation distincts pour séparer la logique 
 
 ---
 
-## 4. Détail des schémas de câblage et branchements
+## Détail des schémas de câblage et branchements
 
 ### LEDs d'indication
 * **LED1** : Anode sur broche `A0/D14` via résistance `R1` ($330\,\Omega$), Cathode à la masse (`GND`)[cite: 2].
