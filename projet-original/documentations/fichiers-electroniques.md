@@ -1,5 +1,5 @@
 ## 1.Schéma électrique
-
+![Texte alternatif](images/schema-electrique.png)
 
 ## 2. Alimentation et Tensions
 Le circuit utilise deux rails d'alimentation distincts pour séparer la logique et la puissance :
