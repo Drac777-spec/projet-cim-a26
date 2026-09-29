@@ -10,8 +10,6 @@ Le circuit utilise deux rails d'alimentation distincts pour séparer la logique 
 * **+12V** : Rail de puissance relié directement au pôle positif (Pin 1) des trois moteurs DC (`JP1`, `JP2`, `JP3`)[cite: 2].
 * **GND** : Masse commune du circuit reliée aux broches 14 et 19 de l'Arduino Nano Every, aux cathodes des LEDs, aux résistances de tirage, aux émetteurs des transistors T1/T2/T3, et aux connecteurs périphériques[cite: 2].
 
----
-
 ## Table de brochage (Pinout)
 
 | Broche Arduino | Signal / Pin CI | Composant / Periphérique relié | Valeur / Type | Description / Rôle |
@@ -29,8 +27,6 @@ Le circuit utilise deux rails d'alimentation distincts pour séparer la logique 
 | **D10** | Pin 28 | JP6 (Pin 1) | Servomoteur 3 | Signal de commande PWM Servo 3[cite: 2] |
 | **D11** | Pin 29 | JP8 (Pin 1) | Balance | Canal de communication 1 (ex. SCK/DT)[cite: 2] |
 | **D12** | Pin 30 | JP8 (Pin 2) | Balance | Canal de communication 2 (ex. DT/SCK)[cite: 2] |
-
----
 
 ## Détail des schémas de câblage et branchements
 
