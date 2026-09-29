@@ -68,8 +68,6 @@ Contient la présentation générale du projet, son objectif, son fonctionnement
 
 Répertoire contenant les images utilisées dans la documentation du projet.
 
-Les images doivent être au format **PNG**.
-
 Exemple :
 
 ```text
