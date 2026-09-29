@@ -1,4 +1,4 @@
-# Convoyeur Simufab 3DTROOP
+# Montage du projet
 
 ## Composants principaux
 
