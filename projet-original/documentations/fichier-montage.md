@@ -1,4 +1,4 @@
-# montage-projet.md
+# Montage du projet
 
 ## 1. Vue d'ensemble des composants
 Le système repose sur une structure mécanique modulaire couplée à un ensemble d'actionneurs et de capteurs pilotés électroniquement.
