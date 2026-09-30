@@ -1,6 +1,3 @@
-Voici le texte nettoyé sans les mentions [cite: 2] et sans la mise en forme de code (backticks ```) qui créait les cases grises autour du texte :
-
-Markdown
 # Partie électronique du projet
 
 ## Schéma électrique
