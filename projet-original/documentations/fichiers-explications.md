@@ -1,60 +1,57 @@
-# Explications du projet
-## Présentation
-Notre projet consiste à réaliser un convoyeur automatisé capable de trier des objets selon leur poids.
-Le système transporte les objets sur un convoyeur. Un capteur infrarouge détecte leur présence, puis une balance mesure leur poids. L'Arduino analyse ensuite cette mesure afin de déterminer la catégorie de l'objet. Un mécanisme de tri permet finalement de diriger l'objet vers le bac correspondant.
-Le système utilise également un écran tactile pour afficher les informations sur l'objet et l'état du système.
-## Fonctionnement général
-Lorsque le système est mis en marche, le convoyeur transporte les objets vers la zone de détection. Le capteur infrarouge détecte lorsqu'un objet arrive. Son poids est ensuite mesuré par la balance.
-À l'aide du microcontrôleur, on récupère la mesure du poids et détermine la catégorie de l'objet selon les seuils définis. Le mécanisme de tri déplace ensuite l'objet vers le bac correspondant.
-L'écran affiche les informations importantes, notamment le poids en grammes et en livres, la catégorie de l'objet, la date et l'heure. Des voyants permettent également d'indiquer le fonctionnement normal du système ou la présence d'une erreur.
-## Classification selon le poids
-La plage de poids prévue pour les objets est de 5 g à 50 g.
+# Explication du projet
 
-Les objets seront classés en différentes catégories selon leur poids :
-Objet léger : en bas de 30g.
-Objet lourd : 30g à 50g.
-Hors limite : supérieur à 50 g.
+## 1. Présentation du projet
+Ce projet consiste à concevoir et réaliser un convoyeur automatisé capable de trier des objets selon leur poids. 
 
-## Principaux composants
-**Convoyeur**
-Le convoyeur permet de transporter les objets entre les différentes étapes du système, de la détection jusqu'à la zone de tri.
+Le système transporte les pièces le long de la ligne, où un capteur infrarouge détecte leur présence avant qu'une balance n'effectue la mesure de masse. L'Arduino analyse ces données pour déterminer la catégorie de l'objet et commande un mécanisme de tri vers le bac approprié. Un écran tactile assure l'interface utilisateur en affichant l'état du système et les caractéristiques de l'objet en temps réel.
 
-**microcontrôleur**
-L'Arduino est le contrôleur principal du système. Il reçoit les informations provenant des capteurs et commande les différents éléments, notamment le moteur du convoyeur, les bras mécaniques, les voyants et l'écran TFT.
+---
 
-**Capteur infrarouge**
-Le capteur infrarouge permet de détecter la présence ou le passage d'un objet sur le convoyeur.
+## 2. Fonctionnement général
 
-**Balance**
-La balance permet de mesurer le poids de l'objet en grammes. Le système doit également permettre d'afficher le poids en livres sur l'écran tactile.
+1. **Transport et détection** : Mise en marche du convoyeur et détection de l'arrivée de l'objet par le capteur infrarouge.
+2. **Mesure du poids** : Ancrage de l'objet sur la balance et acquisition de la masse en grammes par le microcontrôleur.
+3. **Classification** : Comparaison de la valeur mesurée aux seuils prédéfinis pour déterminer la catégorie.
+4. **Tri mécanique** : Activation des bras mécaniques pour diriger l'objet vers le bac correspondant.
+5. **Affichage et signalisation** : Mise à jour de l'écran tactile (poids, catégorie, date/heure) et retour visuel via les voyants lumineux.
 
-**Bras mécaniques**
-Les bras mécaniques permettent de déplacer les objets vers le bac correspondant à leur catégorie de poids.
+---
 
-**Écran tactile**
-L'écran tactile permet d'afficher les informations du système, notamment :
-le poids en grammes ;
-le poids en livres ;
-le type de l'objet en français ;
-le type de l'objet en anglais,espagnol et portugais ;
-la date ;
-l'heure.
-Une lumière verte peut indiquer qu'un tri a été effectué correctement.
-Une lumière rouge peut indiquer une erreur, par exemple lorsqu'un objet dépasse la limite de poids autorisée.
+## 3. Classification selon le poids
 
-**Bouton**
-Le bouton est prévu pour contrôler le système :
-On bouton pour allumer le système ;
-Off bouton pour éteindre le système.
+La plage de mesure opérationnelle est comprise entre **5 g et 50 g**. La répartition s'effectue selon la grille suivante :
 
-## Détection des erreurs
-Le système doit pouvoir détecter certaines situations anormales, notamment lorsqu'un objet reste bloqué sur le convoyeur.
-Lorsqu'un blocage est détecté, une lumière clignotante avertit l'utilisateur.
-Un objet dont le poids dépasse 50 g est également considéré comme un objet hors limite et peut être signalé comme une erreur.
+| Catégorie | Plage de poids | Action du système |
+| :--- | :--- | :--- |
+| **Objet léger** | Moins de $30\,\text{g}$ ($< 30\,\text{g}$) | Tri vers le bac 1 (Léger) |
+| **Objet lourd** | De $30\,\text{g}$ à $50\,\text{g}$ | Tri vers le bac 2 (Lourd) |
+| **Hors limite** | Supérieur à $50\,\text{g}$ ($> 50\,\text{g}$) | Signalement d'erreur et rejet/évacuation |
 
-## Modèle du convoyeur
-Le prototype utilise un modèle de convoyeur imprimé en 3D.
-Le modèle comprend notamment un moteur réducté, un capteur infrarouge réfléchissant et des micro-servos. 
+---
+
+## 4. Inventaire des composants principaux
+
+| Composant | Rôle / Description |
+| :--- | :--- |
+| **Convoyeur** | Structure imprimée en 3D assurant le transport des pièces de la zone de détection jusqu'à la zone de tri. |
+| **Microcontrôleur (Arduino)** | Unité centrale traitant les entrées capteurs et contrôlant le moteur du convoyeur, les bras mécaniques, l'écran et les voyants. |
+| **Capteur infrarouge** | Capteur réfléchissant positionné pour détecter la présence et le passage exact d'une pièce. |
+| **Balance (Cellule de charge)** | Mesure de la masse en grammes, convertie également pour un affichage en livres ($\text{lb}$). |
+| **Bras mécaniques** | Micro-servomoteurs permettant d'orienter ou d'éjecter la pièce vers son réceptacle dédié. |
+| **Écran tactile TFT** | Interface visuelle affichant : masse ($\text{g}$ et $\text{lb}$), catégorie (traduite en français, anglais, espagnol et portugais), date et heure. |
+| **Boutons de commande** | Interface physique d'allumage (**ON**) et d'arrêt (**OFF**) du système. |
+| **Voyants lumineux** | Témoin vert (tri réussi) et témoin rouge (erreur ou dépacement de capacité). |
+
+---
+
+## 5. Détection des erreurs et sécurité
+
+Le système intègre des routines de surveillance pour gérer les anomalies de fonctionnement :
+
+| Type d'anomalie | Cause | Action corrective / Signalisation |
+| :--- | :--- | :--- |
+| **Blocage sur ligne** | Objet immobile ou coincé devant le capteur IR | Activation d'une lumière clignotante d'avertissement. |
+| **Dépassement de masse** | Objet supérieur à $50\,\text{g}$ | Détection "Hors limite", affichage d'une alerte et voyant rouge. |
 
 [Modèle du convoyeur](https://cults3d.com/en/3d-model/various/conveyor-belts-simufab-3dtroop)
 
