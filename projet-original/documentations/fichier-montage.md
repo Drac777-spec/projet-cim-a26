@@ -49,6 +49,12 @@ Vis utilisées :
 - M2x8
 - M4x12
 
+![Texte alternatif](/images/etape1-2-3-4-5-montage-convoyeur.png)
+![Texte alternatif](/images/etape6-7-8-montage-convoyeur.png)
+![Texte alternatif](/images/etape9-10-11-12-montage-convoyeur.png)
+![Texte alternatif](/images/etape13-14-15-16-montage-convoyeur.png)
+![Texte alternatif](/images/etape17-18-montage-convoyeur.png)
+
 ### Étape 2 : Installation du moteur
 
 Fixer le moteur à engrenages sur son support à l'extrémité du convoyeur. 
