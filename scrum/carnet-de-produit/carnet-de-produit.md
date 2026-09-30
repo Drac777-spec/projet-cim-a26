@@ -4,8 +4,6 @@
 
 | Fonctionnalités | Description |
 |---|---|
-| Fonctionnalités | Description |
-|---|---|
 | Le convoyeur doit être capable de transporter le poids de l'objet. | La structure et le moteur supportent la charge sans déformer la courroie. |
 | Le convoyeur devrait être capable de mesurer le poids des pièces transportées. | Une pièce de simulation standard peut peser entre 5 et 50 grammes. |
 | Les bras mécaniques doivent pouvoir déplacer les objets. | Des servomoteurs orientent les bras pour trier et guider les pièces. |
