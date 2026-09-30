@@ -56,7 +56,7 @@ Un objet dont le poids dépasse 50 g est également considéré comme un objet h
 Le prototype utilise un modèle de convoyeur imprimé en 3D.
 Le modèle comprend notamment un moteur réducté, un capteur infrarouge réfléchissant et des micro-servos. 
 
-[Model du convoyeur](https://cults3d.com/en/3d-model/various/conveyor-belts-simufab-3dtroop)
+[Modèle du convoyeur](https://cults3d.com/en/3d-model/various/conveyor-belts-simufab-3dtroop)
 
 
 
